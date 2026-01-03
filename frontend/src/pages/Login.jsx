@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import {getUserData} from "./api/axios";
 
 export default function Login() {
+  const [pagedata, setPageData] = useState(null);
   return (
     <>
       <Navbar />
@@ -62,6 +64,7 @@ export default function Login() {
                 className="w-full mt-3 py-2.5 rounded-full
                   bg-[#f59e0b] text-black font-semibold tracking-wide
                   hover:brightness-110 transition shadow-lg shadow-[#f59e0b]/20"
+                onClick={ const data = getUserData(); setPageData(data);}
               >
                 Login
               </button>
