@@ -62,6 +62,9 @@ export default function Login() {
                 className="w-full mt-3 py-2.5 rounded-full
                   bg-[#f59e0b] text-black font-semibold tracking-wide
                   hover:brightness-110 transition shadow-lg shadow-[#f59e0b]/20"
+                onClick = {fetch("/api/user/data", {"method":"GET"}).then(()=> {
+                  
+                })}
               >
                 Login
               </button>
