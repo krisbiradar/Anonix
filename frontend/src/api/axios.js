@@ -14,3 +14,8 @@ instance.interceptors.request.use((config) => {
 });
 
 export default instance;
+
+const getUserData = function (url) {
+    fetch(url).then((res)=>)  | instance.get()
+    fetch(url).then | instance.post()
+}
